@@ -1,4 +1,6 @@
+
 import "@/styles/globals.css";
+import Navbar from "@/components/Header/Navbar";
 
 export const metadata = {
   title: "Nguyen Portfolio",
@@ -9,6 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Navbar />
         {children}
       </body>
     </html>
