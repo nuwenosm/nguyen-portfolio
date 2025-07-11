@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* ------- Set css variables -------*/
+:root {
+  --clr-dark: #082702;
+  --clr-light: #EBEBE3;
+  --clr-theme: #1B3AF5;
+  --clr-hover: #c9bebd;
+
+  --font-title: 'Lexend', sans-serif;
+  --font-text: 'Space Grotesk', sans-serif;
+
+  /* -- font-size responsive --*/
+  --fs-xl: clamp(2.5rem,  6vw, 4rem);    /* ~40- 64px */
+  --fs-l:  clamp(1.5rem,  4vw, 2.5rem);  /* ~24- 40px */
+  --fs-m:  clamp(1.25rem, 3vw, 1.75rem); /* ~20- 28px */
+  --fs-s:  clamp(1rem,    2vw, 1.25rem); /* ~16- 20px */
+  --fs-xs: clamp(0.75rem, 1.5vw, 1rem);  /* ~12- 16px */
+
+  --fw-thin: 300;
+  --fw-regular: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+
+  /* -- border radius --*/
+  --br-s: 2px;
+  --br-m: 4px;
+  --br-l: 8px;
+
+  --width-phone-max: 600px;
+  --width-tablet-max: 768px;
+  --width-ipad-max: 1024px;
+  --width-laptop-max: 1280px;
+
+}
+
+/* ------- Reset ------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-text);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-regular);
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: var(--clr-dark);
+  text-decoration: none;
+}
+section {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  scroll-margin-top: 80px; /* sticky nav */
+}
